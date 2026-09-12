@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<div class="card narrow"><h2>Secure Login</h2><form method="post"><label>User ID<input name="user_id" required></label><label>Password<input type="password" name="password" required></label><button>Login</button></form><a href="{{url_for('forgot')}}">Forgot Password?</a></div>{% endblock %}

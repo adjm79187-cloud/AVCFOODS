@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Audit Log — Owner Only</h1><table><tr><th>User</th><th>Action</th><th>Time</th></tr>{% for r in rows %}<tr><td>{{r.user_id}}</td><td>{{r.action}}</td><td>{{r.created_at}}</td></tr>{% endfor %}</table>{% endblock %}

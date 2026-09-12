@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<div class="card narrow"><h2>{{title}}</h2><form method="post"><input type="hidden" name="_csrf" value="{{session._csrf}}">{% for n,l,t in fields %}<label>{{l}}<input name="{{n}}" type="{{t}}" required></label>{% endfor %}<button>Submit</button></form></div>{% endblock %}

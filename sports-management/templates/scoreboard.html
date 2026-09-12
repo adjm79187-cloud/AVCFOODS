@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Inter-House Championship Scoreboard</h1><div class="score">{% for h,p in rows %}<div><b>#{{loop.index}}</b><strong>{{h}}</strong><span>{{p}} points</span></div>{% endfor %}</div>{% endblock %}
