@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Dashboard</h1><div class="grid">{% for n,v in counts %}<div class="stat"><b>{{v}}</b><span>{{n}}</span></div>{% endfor %}</div><div class="card"><b>Role:</b> {{session.role}}<p>House Teacher को केवल assigned house के students दिखाई देंगे। Student केवल अपना report card देख सकता है।</p></div>{% endblock %}
